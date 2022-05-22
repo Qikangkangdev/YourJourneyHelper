@@ -5,8 +5,10 @@
       <map>
         <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/fragment_list.xml" value="0.2669706180344478" />
+        <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/fragment_login.xml" value="0.2669706180344478" />
         <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/nav_header.xml" value="0.375" />
-        <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/menu/nav_menu.xml" value="0.48398576512455516" />
+        <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/menu/nav_menu.xml" value="0.39759036144578314" />
+        <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/menu/toolbar.xml" value="1.1285714285714286" />
       </map>
     </option>
   </component>
