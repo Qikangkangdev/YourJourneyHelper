@@ -21,4 +21,30 @@
         android:layout_margin="16dp"
         android:src="@drawable/ic_add"
         app:elevation="8dp"/>
+
+    <ImageView
+        android:id="@+id/no_data_imageView"
+        android:layout_width="136dp"
+        android:layout_height="95dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_no_data"
+        android:visibility="invisible"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/no_data_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="没有数据 !"
+        android:alpha="0.5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_data_imageView" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

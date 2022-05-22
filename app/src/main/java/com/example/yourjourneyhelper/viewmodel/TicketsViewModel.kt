@@ -24,7 +24,7 @@ class TicketsViewModel (application: Application): AndroidViewModel(application)
 
     fun insertData(tickets: Tickets){
         viewModelScope.launch(Dispatchers.IO) {
-            repository.updateData(tickets)
+            repository.insertData(tickets)
         }
     }
 

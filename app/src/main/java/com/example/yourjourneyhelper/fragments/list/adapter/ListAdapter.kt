@@ -53,11 +53,6 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val item = dataList[position]
 
-        holder.itemView.findViewById<com.google.android.material.card.MaterialCardView>(R.id.row_background).setOnClickListener{
-            val action = ListFragmentDirections.actionListFragmentToDetailFrament(item)
-            holder.itemView.findNavController()
-                .navigate(action)
-        }
 
         holder.bind(item)
     }

@@ -16,16 +16,16 @@ import com.example.yourjourneyhelper.viewmodel.TicketsViewModel
 
 class ListFragment : Fragment() {
 
-    private var _binding:FragmentListBinding? = null
+    private var _binding: FragmentListBinding? = null
 
-    private val binding:FragmentListBinding
+    private val binding: FragmentListBinding
         get() = _binding!!
 
-    private val adapter: ListAdapter by lazy{
+    private val adapter: ListAdapter by lazy {
         ListAdapter()
     }
 
-    private lateinit var drawerLayout:androidx.drawerlayout.widget.DrawerLayout
+    private lateinit var drawerLayout: androidx.drawerlayout.widget.DrawerLayout
 
     private val mTicketsViewModel: TicketsViewModel by viewModels()
     private val mSharedViewModel: SharedViewModel by viewModels()
@@ -38,16 +38,17 @@ class ListFragment : Fragment() {
         _binding = FragmentListBinding.inflate(inflater, container, false)
 
         binding.recyclerView.adapter = adapter
-        binding.recyclerView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
-        mTicketsViewModel.getAllData.observe(viewLifecycleOwner){
+        binding.recyclerView.layoutManager =
+            StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        mTicketsViewModel.getAllData.observe(viewLifecycleOwner) {
             mSharedViewModel.checkIfDatabaseEmpty(it)
             adapter.setData(it)
         }
-        mSharedViewModel.emptyDataBase.observe(viewLifecycleOwner){
-            //showEmptyDatabaseViews(it)
+        mSharedViewModel.emptyDataBase.observe(viewLifecycleOwner) {
+            showEmptyDatabaseViews(it)
         }
 
-        binding.fab.setOnClickListener{
+        binding.fab.setOnClickListener {
             findNavController().navigate((R.id.action_listFragment_to_addFragment))
         }
 
@@ -60,11 +61,21 @@ class ListFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        drawerLayout=requireActivity().findViewById(R.id.drawerLayout)
-        if(item.itemId == R.id.callDrawerLayout){
+        drawerLayout = requireActivity().findViewById(R.id.drawerLayout)
+        if (item.itemId == R.id.callDrawerLayout) {
             drawerLayout.openDrawer(GravityCompat.START)
         }
         return super.onOptionsItemSelected(item)
     }
 
+    private fun showEmptyDatabaseViews(emptyDatabase: Boolean) {
+        if (emptyDatabase) {
+            binding.noDataImageView.visibility = View.VISIBLE
+            binding.noDataTextView.visibility = View.VISIBLE
+        } else {
+            binding.noDataImageView.visibility = View.INVISIBLE
+            binding.noDataTextView.visibility = View.INVISIBLE
+        }
+
+    }
 }
