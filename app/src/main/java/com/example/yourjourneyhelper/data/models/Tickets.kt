@@ -11,7 +11,7 @@ data class Tickets(
     @PrimaryKey(autoGenerate = true)
     var id: Int,
     var title: String,
-    var price: Double,
+    var price: String,
     var means: Means,
     var hours: String,
     var start: String

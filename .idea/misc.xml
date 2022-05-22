@@ -4,9 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/add_fragment_menu.xml" value="0.2669706180344478" />
+        <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/fragment_add.xml" value="0.25" />
+        <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/fragment_detail.xml" value="0.2669706180344478" />
+        <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/fragment_detail2.xml" value="0.2669706180344478" />
+        <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/fragment_detail_frament.xml" value="0.21302083333333333" />
         <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/fragment_list.xml" value="0.2669706180344478" />
         <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/fragment_login.xml" value="0.2669706180344478" />
+        <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/fragment_update.xml" value="0.2669706180344478" />
         <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/nav_header.xml" value="0.375" />
+        <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/layout/row_layout.xml" value="0.25748502994011974" />
+        <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/menu/add_fragment_menu.xml" value="0.5405128205128205" />
+        <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/menu/list_fragment_menu.xml" value="0.5405128205128205" />
         <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/menu/nav_menu.xml" value="0.39759036144578314" />
         <entry key="..\:/AndroidStudio/YourJourneyHelper/app/src/main/res/menu/toolbar.xml" value="1.1285714285714286" />
       </map>

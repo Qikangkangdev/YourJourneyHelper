@@ -26,10 +26,6 @@ class MainActivity : AppCompatActivity() {
         //setupActionBarWithNavController(navController)
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
-        supportActionBar?.let{
-            it.setDisplayHomeAsUpEnabled(true)
-            it.setHomeAsUpIndicator(R.drawable.ic_menu)
-        }
         val navView = findViewById<NavigationView>(R.id.navView)
         navView.setCheckedItem(R.id.navCall)
         navView.setNavigationItemSelectedListener {
@@ -40,16 +36,4 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onCreateOptionsMenu(menu:  Menu?): Boolean{
-        menuInflater.inflate(R.menu.toolbar, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        drawerLayout = findViewById(R.id.drawerLayout)
-        when(item.itemId){
-            android.R.id.home -> drawerLayout.openDrawer(GravityCompat.START)
-        }
-        return true
-    }
 }

@@ -2,4 +2,9 @@
     <string name="app_name">YourJourneyHelper</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="means">
+        <item>HighSpeedRailway</item>
+        <item>Airplane</item>
+        <item>Train</item>
+    </string-array>
 </resources>
